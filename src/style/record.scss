@@ -1,0 +1,55 @@
+#wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: -15px;
+}
+#scroller {
+  position: absolute;
+  width: 100%;
+}
+.record-item {
+  font-size: 15px;
+  margin: auto 15px;
+  height: 65px;
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #ffffff;
+  color: #333333;
+  overflow: hidden;
+  position: relative;
+  .item-name {
+    display: block;
+    margin-left: 15px;
+    margin-top: 14px;
+  }
+  .item-date {
+    color: #999999;
+    font-size: 13px;
+    margin-left: 15px;
+  }
+  .item-time {
+    margin-left: 5px;
+  }
+  .item-count {
+    display: block;
+    position: absolute;
+    right: 13px;
+    top: 20px;
+  }
+}
+.no-record{
+  display: block;
+  background-image: url("../asset/noRecord.png");
+  background-repeat: no-repeat;
+  font-size: 15px;
+  color: #9E9E9E;
+  background-size: 50px 50px;
+  background-position: top;
+  width: 111px;
+  height: 50px;
+  margin: 150px auto 0;
+  text-align: center;
+  padding-top: 54px;
+}

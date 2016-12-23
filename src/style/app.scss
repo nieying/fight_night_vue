@@ -1,0 +1,467 @@
+@charset "utf-8";
+@import "_setting.scss";
+body {
+    margin: 0;
+    min-width: 320px;
+
+    font-family:"Helvetica Neue", Helvetica, STHeiTi, sans-serif, "微软雅黑","Microsoft YaHei";
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: $white-color;
+    background-color: $black-color;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+     -khtml-user-select: none;
+}
+
+p {
+    margin: 0;
+}
+
+html,
+body {
+    -webkit-user-select:      none;
+       -moz-user-select: -moz-none;
+        -ms-user-select:      none;
+            user-select:      none;
+
+    -webkit-text-size-adjust: 100% !important;
+       -moz-text-size-adjust: 100% !important;
+            text-size-adjust: 100% !important;
+}
+
+a,
+img {
+    -webkit-touch-callout: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+button,
+input {
+    outline: none;
+}
+
+input {
+    border: none;
+}
+
+select,
+input[type="button"],
+input[type="submit"] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+}
+
+.ng-cloak {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+
+    -webkit-appearance: none !important;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+a,
+img,
+button,
+input,
+textarea,
+div {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    overflow: hidden;
+
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.red_txt {
+    color: $red-color;
+}
+.gray_txt{
+    color:$gray-color;
+}
+
+/* 输入框组件  */
+.form_box {
+    overflow: hidden;
+    padding-top: 10px;
+    margin-bottom: 32px;
+    border: none;
+}
+.form_box--item {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    padding: 20px 36px 0 10px;
+    box-sizing: border-box;
+
+    font-size: 15px;
+    padding-left:110px;
+}
+
+section.form_box--item input {
+  font-size: 15px;
+}
+
+.form_box_dis{
+    margin-top:77px;
+}
+.form_box--head {
+    position: absolute;
+    width:95px;
+
+    left: 0;
+
+    box-sizing: border-box;
+
+    text-align: right;
+
+    color: $gray-color;
+    opacity: 0.8;
+    line-height: 24px;
+}
+.form_box--field {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #45484a;
+    border-bottom-color:rgba(82,82,82, 0.8);
+    width: 100%;
+    padding-bottom: 2px;
+    overflow: hidden;
+    height: 24px;
+    position: relative;
+    left: 21px;
+}
+.form_box--input {
+    box-sizing: border-box;
+
+    color: $white-color;
+    background: transparent;
+
+    outline: none;
+    font-size: 14px;
+    height: 24px;
+    padding-left:8px;
+}
+.form_box--input_l {
+    box-sizing: border-box;
+    color: #fff;
+    background: transparent;
+    outline: none;
+    font-size: 15px;
+    height: 24px;
+    width: 40%;
+    padding-left:2px;
+}
+.form_box--input.error,.form_box--input_l.error{
+    border: 1px solid #ff5a5f;
+    background-color: rgba(255,255,255,.14);
+}
+
+input[type=date] {
+    background-color:transparent;
+    color:#fff;
+    FILTER: alpha(opacity=0); /*androd*/
+    appearance:none;  /*下拉框去掉右侧图标*/
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+textarea.form_box--input {
+    height: 48px;
+}
+select.form_box--input{
+    background: transparent;
+}
+input[type='date']{
+    white-space: nowrap;
+}
+.form_box-btn{
+    margin-top:12px;
+}
+.radioInput {
+    display: inline-block;
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+.radioInput +label{
+    color:$gray-color;
+}
+.radioInput input[type=radio] {
+    display: none;
+
+    opacity: 0;
+}
+
+.radioInput input[type=radio]:checked + .radio-box:after {
+    background-color: $primary-color;
+}
+.radioInput input[type=radio]:checked + .radio-box{
+    border-color:$primary-color;
+}
+.radioInput .radio-box {
+    display: block;
+
+    border: 2px solid $gray-color;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+
+    background-color: $black-color;
+
+    cursor: pointer;
+}
+
+.radioInput .radio-box:after {
+    display: block;
+
+    margin-top: 2px ;
+    margin-left: 2px ;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+
+    content: "";
+}
+.record-title {
+    color: $gray-color;
+    opacity: 0.8;
+    padding-left: 8px;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 6px;
+    font-weight: normal;
+}
+.record-title--tip {
+    font-size: 12px;padding-left: 6px;
+}
+.record-ctn {
+    margin: 0 10px;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,.2);
+    padding: 10px;
+    line-height: 30px;
+    font-size: 14px;
+    color: $gray-color;
+}
+.record-ctn--txt{
+    margin-left: 6px;
+    color:#fff;
+}
+.assess-title {
+    margin-left: 24px;
+
+    color: $gray-color;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+.assess-star {
+    font-size: 15px;
+    border-top: 1px solid $gray-color;
+    margin-left: 24px;
+    line-height: 45px;
+    color: $gray-color;
+}
+.assess-star--ctn {
+    float: right;
+    width: 180px;
+    margin-top: 11px;
+    margin-right: 30px;
+}
+
+.assess-star--item {
+    width: 20%;
+    height: 20px;
+    float: left;
+    background-image: url(../asset/star-e.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.assess-star--item.active{
+    background-image: url(../asset/star.png);
+}
+.assess-input-ctn {
+    padding: 0 16px;
+}
+
+.assess-recomand {
+    width: 95%;
+    height: 100px;
+    font-size: 14px;
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    padding-bottom: 0;
+}
+.phone-title {
+    color: #c9c9c9;
+    margin: 0;
+    width: 85px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+section.phone-ctn {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.phone-choose {
+    background-image:url('../asset/icon_addPic.png');
+    background-repeat: no-repeat;
+    background-size:85px;
+    width: 85px;
+    height: 85px;
+    border: none;
+    text-indent: -9999px;
+    margin-bottom: 10px;
+}
+
+.phone-tip {
+    color: #c9c9c9;
+    opacity: .6;
+    clear:left;
+}
+/* 按钮组件  */
+.btn-primary {
+    display: block;
+
+    margin: 16px auto;
+    border: none;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    padding: 1px 0;
+    width: 92%;
+
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+    text-align: center;
+
+    color: #fff;
+    background: $primary-color;
+
+    outline: none;
+}
+.btn-primary:disabled {
+    background-color: #ffa5a2;
+}
+.btn-assist {
+    display: block;
+
+    margin: 16px auto;
+    box-sizing: border-box;
+    border: 1px solid $primary-color;
+    border-radius: 3px;
+    padding: 1px 0;
+    width: 90%;
+
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+    text-align: center;
+
+    color: $primary-color;
+    background: transparent;
+
+    outline: none;
+}
+
+.input-verify-ctn {
+    margin-top: 10px;
+    color: $gray-color;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.input-verify-input {
+    background-color: rgba(255, 255, 255, .2);
+    border: none;
+    height: 36px;
+    width: 160px;
+    margin-left: 10px;
+    color:#fff;
+}
+
+.input-verify-img {
+    width: 70px;
+    height: 35px;
+    vertical-align: middle;
+    margin-left: 23px;
+}
+/* 错误页 */
+.errorImg {
+    display: block;
+
+    margin: 120px auto;
+    width: 70%;
+    max-width: 400px;
+}
+.errorTip {
+    position: relative;
+    top: 70%;
+
+    margin-bottom: 20px;
+    width: 100%;
+
+    font-size: 18px;
+    text-align: center;
+
+    color: #999;
+}
+.errorTip span {
+    display: block;
+
+    margin-top: 0;
+
+    font-size: 15px;
+}
+.btn-addRecord{
+    position: absolute;
+    height: 16px;
+    width: 53.5px;
+    background-size: 53.5px;
+    background-repeat: no-repeat;
+    background-image: url('../asset/icon_add.png');
+    right: 22px;
+    margin-top: -22px;
+}
+.btn-editRecord{
+    float: right;
+    width: 47.5px;
+    height: 14px;
+    background-size: 47.5px;
+    background-image: url('../asset/icon_edit.png');
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
